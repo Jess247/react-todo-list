@@ -4,12 +4,14 @@ import { MdCheckBoxOutlineBlank } from "react-icons/md";
 
 function ListItem(props) {
     return(
-        <li>
-            <span><MdCheckBoxOutlineBlank /></span>
-            {props.task}
+        <li className="todo-item">
+            <div className="checkbox">
+                <MdCheckBoxOutlineBlank size={25}/>
+                {props.task}
+            </div>
             <div className="icons">
-                <MdDeleteForever/>
-                <MdEdit />
+                <MdDeleteForever size={20}/>
+                <MdEdit size={20} />
             </div>
         </li>
     )

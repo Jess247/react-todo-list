@@ -1,16 +1,17 @@
 :root {
     --accent-clr: #3d52a0;
     --accent-clr-light: #7091e6;
-    --light-grey-blue: #d1e0ff;
-    --very-light-grey-blue:#ede8f5;
+    --light-grey-blue: #fbfbfb;
+    --very-light-grey-blue:#ffffff;
     --shadow-clr: #2d3e7a;
     --white: #ffffff;
-    --black-blue: #131339;
+    --black-blue: #030303;
 }
 
 .todo-container{
-    width: 80%;
+    width: min(80%, 600px);
     margin: 0 auto;
+
 }
 
 .btn {
@@ -25,9 +26,31 @@
   }
 
 .todo {
-    background: linear-gradient(30deg,var(--very-light-grey-blue), var(--light-grey-blue));
+    background: linear-gradient(60deg,#eaf0ff, #f7f9ff);
     color: var(--black-blue);
-    padding: 2rem;
+    padding: 1rem;
     margin: 1rem auto;
     border-radius: 1rem;
+    box-shadow: 0 0 3px var(--light-grey-blue);
+}
+
+.todo-item {
+    margin: .5rem 0;
+    border-radius: .5rem;
+    padding: .3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px var(--accent-clr);
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.icons {
+    display: flex;
+    gap: .5rem;
 }
