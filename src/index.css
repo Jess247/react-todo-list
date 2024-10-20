@@ -1,3 +1,11 @@
+:root {
+  --accent-clr: #3d52a0;
+  --accent-clr-light: #7091e6;
+  --light-grey-blue: #adbbda;
+  --very-light-grey-blue:#ede8f5;
+  --white: #ffffff;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -5,8 +13,10 @@
 }
 
 body {
+  height: 100vh;
   font-family: sans-serif;
   line-height: 1.5;
+  background: linear-gradient(var(--white), var(--light-grey-blue));
 }
 
 li {

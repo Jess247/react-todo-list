@@ -1,0 +1,14 @@
+:root {
+    --accent-clr: #3d52a0;
+    --accent-clr-light: #7091e6;
+    --light-grey-blue: #adbbda;
+    --very-light-grey-blue:#ede8f5;
+    --white: #ffffff;
+    --black-blue: #131339;
+  }
+
+ .heading {
+    color: var(--black-blue);
+    text-align: center;
+    margin: 2rem 0;
+ }
