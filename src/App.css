@@ -6,13 +6,3 @@
   --shadow-clr: #2d3e7a;
   --white: #ffffff;
 }
-
-.btn {
-  background: linear-gradient(30deg, var(--accent-clr),var(--accent-clr-light));
-  color: var(--white);
-  border: none;
-  border-radius: .5rem;
-  padding: .3rem .8rem;
-  border-bottom: 2px solid var(--shadow-clr);
-  box-shadow: 0 0 2px var(--shadow-clr);
-}
