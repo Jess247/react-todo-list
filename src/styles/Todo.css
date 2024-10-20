@@ -14,6 +14,24 @@
 
 }
 
+.input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input input {
+    width: 70%;
+    margin-right: .5rem;
+    border: none;
+    border-bottom: 1px solid var(--accent-clr);
+    border-top: 1px solid var(--accent-clr);
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+    padding: .5rem 1rem;
+}
+
 .btn {
     background: linear-gradient(30deg, var(--accent-clr),var(--accent-clr-light));
     color: var(--white);
@@ -24,6 +42,7 @@
     border-bottom: 2px solid var(--shadow-clr);
     box-shadow: 0 0 2px var(--shadow-clr);
   }
+
 
 .todo {
     background: linear-gradient(60deg,#eaf0ff, #f7f9ff);
