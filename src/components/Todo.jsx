@@ -1,8 +1,8 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import '../styles/Todo.css'
-import Button from './Button';
-import Input from './Input';
-import ListItem from "./ListItem";
+import Button from './Button'
+import Input from './Input'
+import ListItem from "./ListItem"
 
 function Todo() {
 
@@ -21,6 +21,11 @@ function Todo() {
         console.log(taskInput)
     }
 
+    const handleDelete = (id) => {
+        setTasks(prevTasks => prevTasks.filter((_, index) => index !== id))
+        console.log(tasks)
+    }
+
     
 
     return(
@@ -30,7 +35,7 @@ function Todo() {
                 <Input onChange={(e) => handleChange(e)} text={taskInput}/>
             </div>
             {tasks.length > 0 && <ul className="todo">
-                { tasks.map(task => <ListItem key={task[0]}task={task}/>)}
+                { tasks.map((task) => <ListItem key={tasks.indexOf(task)} id={tasks.indexOf(task)} task={task} handleDelete={handleDelete}/>)}
             </ul>}
         </div>
     )
